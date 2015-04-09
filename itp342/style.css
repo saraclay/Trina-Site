@@ -100,7 +100,6 @@ body {
   width:100%;
   font-color:#fff;
   background-color:#990000;
-  text-align:center;
 }
 
 #footer-page a {
@@ -217,12 +216,6 @@ h2,
   font-size: 2rem;
   color:#000;
 }
-
-h2 a {
-  color:#000;
-  text-decoration:none;
-}
-
 h3,
 .h3 {
   font-size: 26px;
@@ -249,8 +242,7 @@ h6,
 .no-style-heading {
   font-size: 100%;
 }
-
-/*dl,
+dl,
 menu,
 ol,
 ul {
@@ -287,8 +279,6 @@ nav ol {
   margin-top: 0;
   margin-bottom: 0;
 }
-*/
-
 blockquote {
   font-size: 22px;
   font-size: 1.375rem;

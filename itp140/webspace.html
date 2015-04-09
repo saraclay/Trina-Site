@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mobile Minor</title>
+
+  <meta name="description" content="Trina Gregory USC Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/gif" href="img/icon.gif" />
+  <!-- favicons 
+  <link rel="shortcut icon" href="/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+  -->
+
+  <!--google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../style.css">
+  <script src="js/modernizr.js"></script>
+</head>
+<body>
+
+<div id="page-header">
+<h2><a href="../itp140.html">ITP 140 Mobile Application Technologies</a></h2>
+</div>
+
+<div id="section-header">
+<h3>Your Web Space</h3>
+</div>
+
+<h3>Physics Libraries</h3>
+<p>
+Students can <a href="http://www.usc.edu/its/web/getting_started/ppages.html" target="_blank">publish personal pages on a USC web server</a> which we are going to use for this class. You will create a main page in which to list all of your completed assignments AND have hyperlinks to them.
+
+<h3>File Transfer Program</h3>
+In order to do this, you will need to use an FTP (file transfer program) program to copy the completed Web pages AND files (e.g. images) from your computer to the Web (the USC server where your student Web space is). On the laptops in class, <a href="http://filezilla-project.org/" target="_blank">FileZilla</a> (Start → Programs → Internet Tools) is on the Windows machines and <a href="https://cyberduck.io/" target="_blank">Cyberduck</a> (Finder → Applications) in on the Mac machines. USC offers FileZilla (Windows) and Fetch (Mac) as the free FTP programs. You can download the free university distributed software at <a href="http://software.usc.edu" target="_blank">software.usc.edu</a>.
+
+<h5>Web Space</h5>
+<ol>
+<li>Start FileZilla by selecting Start → Programs → Internet Tools → FileZilla.</li>
+<li>Click on the Connect image in the upper left corner. Do not use QuickConnect.</li>
+<li>In the "My FTP Sites" folder listing, click the "New Site" button and create a site called "aludra".</li>
+<li>Fill in the following information:</li>
+</ol>
+<ul>
+<li>For the Host, enter aludra.usc.edu.<li>
+<li>For the Servertype, select SFTP using SSH2. The Port should change to 22.</li>
+<li>For the Logintype, select Ask for password.</li>
+<li>For the User, enter your USC username.</li>
+<li>Click the Connect button to log in. You will be prompted to enter your password.</li>
+</ul>
+
+Once you are logged in, you should see two "directory" panes. The one on the left represents the computer you are physically sitting in front of. The one on the right represents the USC Server named aludra which houses your web space.
+<ul>
+<li>To create a folder, right click on the mouse and select the "Create Directory" option.</li>
+<li>To transfer files, double click on a file in one of the panes. It will then appear in the other pane. You can transfer files to aludra and also get files from aludra.</li>
+</ul>
+
+<h4>Fetch</h4>
+<ol>
+<li>Start Fetch by using Finder and selecting Applications → Fetch. You can also use the Spotlight tool and enter Fetch.</li>
+<li>In the "New Connection" window, enter:</li>
+<ul>
+<li>For the Hostname, enter <strong>aludra.usc.edu</strong>.</li>
+<li>For the Username, enter your USC username.</li>
+<li>For the "Connect using" option, select <strong>SFTP</strong>.</li>
+<li>For the Password, enter your password.</li>
+<li>Click the <strong>Connect</strong> button.</li>
+<li>One you are logged in, you will see window representing the web server aludra.</li>
+</ul>
+</ol>
+
+<ul>
+<li>To <strong>create a folder</strong>, click the "New Folder" icon at the top of the window.</li>
+<li>To <strong>transfer files</strong>, just drag and drop files from your computer (from your Desktop or using a Finder window). You can also drag and drop files from aludra to your computer.</li>
+</ul>
+
+<h4>Cyberduck</h4>
+<ol>
+<li>Start Cyberduck by using Finder and selecting Applications → Cyberduck. You can also use the Spotlight tool and enter Cyberduck.</li>
+<li>Click the "Open Connection" icon.</li>
+<li>Fill in the following information:</li>
+<ul>
+<li>For the first pulldown, select <strong>SFTP (SSH File Transfer Protocol)</strong> instead of <i>FTP (File Transfer Protocol)</i>. The Port should change to 22.</li>
+<li>For the Server, enter <strong>aludra.usc.edu</strong>.</li>
+<li>For the Username, enter your USC username.</li>
+<li>For the Password, enter your password.</li>
+<li>Click the <strong>Connect</strong> button.</li>
+<li>One you are logged in, you will see window representing the web server aludra.</li>
+<ul>
+</ol>
+
+<ul>
+<li>To <strong>create a folder</strong>, click the "Action" icon at the top of the window and select "New Folder ...".</li>
+<li>To <strong>transfer files</strong>, just drag and drop files from your computer (from your Desktop or using a Finder window). You can also drag and drop files from aludra to your computer.</li>
+</ul>
+
+<h4>Setting up your web space</h4>
+
+<ol>
+<li>First, run an FTP client to connect to aludra.</li>
+<li>All of your files that you want the world to see via a web browser needs to be in a folder called <strong>public_html</strong>. If it does not exist, create a folder and rename it to <strong>public_html</strong>.</li>
+<li>Open up the public_html directory by double clicking on it.</li>
+<li>For this class, all of your files should be be in a folder called <strong>itp140</strong>. If it does not already exist, create a folder named itp140. Please note that folder and file names ARE case-sensitive (i.e. <strong>itp140</strong> is NOT the same as <strong>ITP140</strong>).</li>
+<li>Open up the itp140 directory by double clicking on it.</li>
+</ol>
+
+<h4>Access your web space</h4>
+Using a web browser such as Firefox or Safari, enter the following web address: <strong>http://scf.usc.edu/~username/itp140</strong>.
+
+</p>
+
+<div id="footer-page">
+  <a href="../itp140.html">Back</a>
+</div>
+
+</body>
+</html>
