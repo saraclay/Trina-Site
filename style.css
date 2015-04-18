@@ -141,7 +141,6 @@ p {
 pre {
   margin: 1em 0;
 }
-ul + p,
 ul + pre,
 ol + p,
 ol + pre {
